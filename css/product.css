@@ -1,0 +1,338 @@
+/* Global Styles */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+  body {
+    position: relative;
+    height: 100%;
+    width:100%;
+  }
+
+  body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .navbar {
+    position: fixed;  /* Keeps the navbar fixed at the top of the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    background: transparent;
+    z-index: 10;
+  }
+
+    .navbar img {
+      height: 100px;
+      width: 200px;
+
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar .nav-links li {
+      margin: 0 10px;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bolder;
+      padding-right:20px;
+    }
+    .navbar .nav-links a:hover {
+      color: #0a778c;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+  /* Hero Section */
+  .hero-section {
+    background:linear-gradient(to right, #0a778c, #12a3c0);
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-btn {
+    background-color: #12a3c0;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-btn:hover {
+    background-color: #0a778c;
+  }
+  
+ /* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .product-card .details-btn {
+    background-color:  #12a3c0;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .product-card .details-btn:hover {
+    background-color: #0a778c;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 10px;
+  }
+  
+  .modal-content .close-btn {
+    font-size: 1.5em;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  /* Why Choose Section */
+  .why-choose {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fafafa;
+  }
+  
+  .why-choose h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  
+  .benefit-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .benefit-card span {
+    font-size: 2em;
+    color: #ff9000;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+  }
+
+
+
+  
+     /* Footer Styling */
+     .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+        width:100%;
+        height: 67.5vh;
+    }
+  
+    /* Main Footer Container */
+    .footer-content-wrapper {
+        width: 80%;
+        height:80%;
+        margin: 0 0;
+        margin-top: 90px;
+        display: flex;
+        gap: 1px;
+        text-align: left;
+    }
+  
+    /* Individual Footer Sections */
+    .footer-section {
+        flex: 1;
+        margin-left: 0;
+    }
+  
+    .footer-section h3 {
+        font-size: 1.65em;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        font-weight: 700;
+    }
+  
+    .footer-section p,
+    .footer-section a {
+        color: #ccc;
+        font-size: 14px;
+        line-height: 1.6;
+        text-decoration: none;
+        text-align: left;
+        width: 280px;
+    }
+  
+    .footer-section a:hover {
+        color: #fff;
+    }
+  
+    /* Newsletter Section */
+    .newsletter-form {
+        display: flex;
+        margin-top: 10px;
+       background-color: #333;
+       border: 1px solid white;
+    }
+  
+    .newsletter-form input[type="email"] {
+        padding: 10px;
+        border: none;
+        outline: none;
+        background-color: #333;
+        flex: 1;
+     
+    }
+  
+    .newsletter-form button {
+        background:linear-gradient(to right, #0a778c, #12a3c0);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border: 1px solid white;
+        font-weight: bold;
+        color:white;  }
+  
+    /* Social Media Icons */
+    .social-icons {
+        margin-top: 15px;
+    }
+  
+    .social-icons a {
+        color: #fff;
+        font-size: 1.2em;
+        margin-right: 10px;
+        display: inline-block;
+    }
+  
+    /* Bottom Footer */
+    .footer-bottom {
+        border-top: 1px solid rgba(255,255, 255, 0.1);
+        text-align: center;
+        padding: 20px 30px;
+        background-color: #333;
+        font-size: 0.85em;
+        color: #aaa;
+        height:17vh;
+    }
+  
+    .footer-bottom a {
+        color: white;
+        margin: 0 30px;
+        text-decoration: none;
+        font-size: 13px;
+        
+    }
+    .footer-bottom p{
+      margin-top: 27px;
+      font-size: 16px;
+      color: #aaa;
+    }
+  
